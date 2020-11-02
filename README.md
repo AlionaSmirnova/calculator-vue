@@ -1,2 +1,2 @@
 # calculator-vue
-Small and easy calculator. I used Html, CSS and Vue.js to made it.
+Small and easy calculator. I used Html, CSS and Vue.js to made it. Available for integers, not double numbers.
