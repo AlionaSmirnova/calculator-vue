@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title> Calculator Vue.js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+            <link rel='stylesheet' href='style.css'>
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+         <body>
+             <h1> Vue.js calculator</h1> 
+              <h2>How to use: </h2>
+             <h3> You can also enter the numbers(integers) and operations from your keyboard.
+               Just click on the input field. Press 'Enter' on keyboard to get the calculations.
+             </h3>
+            <div id="app">
+                <div class="grid">
+                    <input @keyup.enter='calc()' type="text" v-model="result" placeholder="0">
+                        <button @click='input(num)' class='cell num' v-for="num in numbers">{{num}}</button>
+                        <button @click='input(op)' class="cell op" v-for="op in operations">{{op}} </button>
+                        <button @click='reset()' class="cell op"> R </button>
+                        <button @click='calc()' class="cell op"> = </button>
+                </div>
+            </div>
+        </body>
+        <script src='script.js'> </script>
+    </html>
+    
